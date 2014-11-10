@@ -1,0 +1,36 @@
+{
+  "name": "ricardovz.www",
+  "version": "0.0.1",
+  "description": "Website fo Ricardo Villanueva based on HTML5 and AngularJS using new technologies to help with the development process, the automation of tasks and the deployment to live environments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricard0javier/ricardovz.www"
+  },
+  "keywords": [
+    "ricardo",
+    "villanueva",
+    "website",
+    "www",
+    "ricardovz"
+  ],
+  "author": "Ricardo Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricard0javier/ricardovz.www/issues"
+  },
+  "homepage": "https://github.com/ricard0javier/ricardovz.www",
+  "devDependencies": {
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-imagemin": "^0.9.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0"
+  }
+}
