@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
 
   grunt.config('concat', {
+    dist: {
+      src: ['src/vendors/css/**/*.css', 'src/resources/css/**/*.css'],
+      dest: 'dist/resources/css/<%= pkg.name %>-v<%= pkg.version %>.min.css'
+    },
     dev: {
-      options: {
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-          '<%= grunt.template.today("yyyy-mm-dd") %> */'
-      },
-      src: ['src/**/*.css', 'src/**/*.min.css'],
+      src: ['src/vendors/css/**/*.css', 'src/resources/css/**/*.css'],
       dest: 'dev/resources/css/global.min.css'
     }
   });

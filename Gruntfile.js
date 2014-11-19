@@ -12,7 +12,29 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'uglify', 'htmlmin', 'cssmin', 'concat', 'imagemin']);
-  grunt.registerTask('dev', ['clean:dev', 'uglify:dev', 'htmlmin:dev', 'concat:dev', 'imagemin:dev']);
-
+  grunt.registerTask('default', [
+    'dev', 
+    'dist', 
+    'watch']);
+  grunt.registerTask('dist', [
+    'clean:dist', 
+    'copy:dist',
+    'uglify:dist', 
+    'processhtml:dist', 
+    'htmlmin:dist', 
+    'validation:dist', 
+    'sass', 
+    'concat:dist', 
+    'cssmin:dist',
+    'imagemin:dist']);
+  grunt.registerTask('dev', [
+    'clean:dev', 
+    'copy:dev',
+    'uglify:dev', 
+    'processhtml:dev', 
+    'htmlmin:dev', 
+    'validation:dev', 
+    'sass', 
+    'concat:dev', 
+    'imagemin:dev']);
 };

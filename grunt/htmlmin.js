@@ -10,16 +10,22 @@ module.exports = function(grunt) {
         useShortDoctype: true,
         removeEmptyAttributes: true
       },
-      files: {
-        'dist/index.html': 'src/index.html',
-        'dist/test.html': 'src/test.html'
-      }
+      files: [{
+        expand: true,
+        cwd: './dist',
+        src: ['**/*.html'],
+        dest: './dist',
+        ext: '.html'
+      }],
     },
     dev: {
-      files: {
-        'dev/index.html': 'src/index.html',
-        'dev/test.html': 'src/test.html'
-      }
+      files: [{
+        expand: true,
+        cwd: './dev',
+        src: ['**/*.html'],
+        dest: './dev',
+        ext: '.html'
+      }]
     }
   });
 };
