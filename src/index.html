@@ -4,24 +4,183 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <meta name="description" content="">
+    <meta name="author" content="Ricardo Villanueva">
+    <link rel="icon" href="resources/images/favicon.ico">
 
-    <!-- Bootstrap -->
+    <title>RicardoVZ.com</title>
+    <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Adding font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- build:remove:dist> -->
+    <link href="resources/css/global.min.css" rel="stylesheet">
+    <!-- /build -->
+
+    <!-- build:template:dist    
+    <link href="<%= cssFile %>" rel="stylesheet">
+    /build -->
+
+  </head>
+
+  <body>
+
+    <!-- menu bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <button class="btn btn-sm btn-info navbar-btn pull-left sb-toggle-left">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </button>
+        <div class="navbar-header pull-left">
+          <a class="navbar-brand pull-left" href="#">
+            <img width="147" height="28" alt="RicardoVZ.com" src="resources/images/ricardovz_brand.png">
+          </a>
+        </div>
+        <button class="btn btn-sm btn-info navbar-btn pull-right sb-toggle-right">
+          <span class="glyphicon glyphicon-user"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- main container -->
+    <div id="sb-site" class="container starter-template">
+
+      <!-- breadcrumb -->
+        <ol class="breadcrumb">
+         <!--  <li><a href="#">Home</a></li>
+          <li><a href="#">Library</a></li> -->
+          <li class="active">Home</li>
+        </ol>
+
+      <!-- content -->
+        <section>
+          <header>
+            <h6>Recently</h6>
+          </header>
+          <article>
+            <header>
+              <h2>New Website Design</h2>
+
+              <p class="lead">I decided to get rid of drupal as CMS and build the site from scratch using HTML5 + AngularJS + Java</p>
+
+            </header> 
+
+            <p>After six months installing my own platform on the cloud, I have decided to start to build my website from scratch. I should admit that Drupal is an excellent content manager but at this level of my professional career I would like to have more control over my site.</p>
+
+            <p>In consequence, I have been working each day during the last 3 weeks developing a new infrastructure, because nowadays the continuous integration concepts are playing songs on my head. I think that I should learn more about that and the best way to do it is experimenting, trying, making mistakes and fixing them. For that reason I have grouped some tools and scheduling some tasks that will help me during the coding and deployment of new releases.</p>
+
+            <p>As advantage, I have learnt new technologies but the most important for me is that I have opened my eyes and now I am conscious of the lot of things I should learn and enhance.</p>
+
+            </p>I will be actively posting my experiences, settings and code involved in this learning process that I have started. I hope it will not be too long to start sharing with all of you my new knowledge.</p>
+            <img class="pull-right" alt="A painter is colouring the site" width="260" height="198" src="resources/images/designing.jpg">      
+          </article>
+        </section>
+
+      <!-- pagination -->
+<!--       <nav>
+        <ul class="pagination">
+          <li><a href="#">&laquo;</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+      </nav> -->
+
+      <!-- section -->
+      <!-- <div class="wrapper"> -->
+        <!-- <div class="ribbon-wrapper-green"> -->
+          <!-- <div class="ribbon-green">NEWS</div> -->
+        <!-- </div> -->
+
+        <!-- Texto de prueba -->
+      <!-- </div>​ -->
+
+    </div><!-- /.container -->
+
+    <!-- menu -->
+    <aside class="sb-slidebar sb-left sb-style-overlay">        
+      <nav>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="sb-close active"><a href="#">Home<span class="glyphicon glyphicon-home pull-right"></span></a></li>
+          <!-- <li class="sb-close"><a href="#">Curriculum<span class="glyphicon glyphicon-briefcase pull-right"></span></a></li>
+          <li class="sb-close"><a href="#">Blog<span class="glyphicon glyphicon-pencil pull-right"></span></a></li>
+          <li class="sb-close"><a href="#">Contact<span class="glyphicon glyphicon-send pull-right"></span></a></li> -->
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- profile -->
+    <aside class="sb-slidebar sb-right sb-style-overlay" itemscope itemtype="http://schema.org/Person">
+      <address>
+
+        <div class="center-block">
+          <img class="image-markup" width="200" height="200" alt="RicardoVZ.com" itemprop="image" src="resources/images/profile.png">
+          <meta itemprop="givenName" content="Ricardo Javier">
+          <p>
+            <span itemprop="name">Ricardo</span> <span>Villanueva</span><br>
+            <span itemprop="jobTitle">Software Engineer</span></p>
+          <meta itemprop="familyName" content="Villanueva Zacarias">
+          <meta itemprop="gender" content="male">
+          <meta itemprop="honorificPrefix" content="Mr">
+          <meta itemprop="honorificSuffix" content="MSc IT">
+        </div>
+
+        <p>
+          <span class="fa-stack">
+            <span class="fa fa-square fa-stack-2x"></span>
+            <span class="fa fa-skype fa-stack-1x fa-inverse"></span>
+          </span>
+          <a href="skype:villanueva.ricardo?chat">villanueva.ricardo</a>
+        </p>
+        <p>
+          <span class="fa-stack">
+            <span class="fa fa-square fa-stack-2x"></span>
+            <span class="fa fa-mobile fa-stack-1x fa-inverse"></span>
+          </span>
+          <a href="tel:+447473554777" itemprop="telephone">(+44)-(0)7473.554.777</a>
+        </p>
+        <p>
+          <span class="fa-stack">
+            <span class="fa fa-square fa-stack-2x"></span>
+            <span class="fa fa-at fa-stack-1x fa-inverse"></span>
+          </span>
+          <a href="mailto:villanueva.ricardo@gmail.com" itemprop="email">villanueva.ricardo@gmail.com</a>
+        </p>
+        <p>
+          <span class="fa-stack">
+            <span class="fa fa-square fa-stack-2x"></span>
+            <span class="fa fa-download fa-stack-1x fa-inverse"></span>
+          </span>
+          <a href="resources/data/RicardoVillanueva.vcf">Save Contact Details</a>
+        </p>
+      </address>
+    </aside>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <!-- build:remove:dist -->
+    <script src="resources/js/global.min.js"></script>
+     <!-- /build -->
+
+    <!-- build:template:dist    
+    <script src="<%= jsFile %>"></script>
+    /build -->
   </body>
 </html>

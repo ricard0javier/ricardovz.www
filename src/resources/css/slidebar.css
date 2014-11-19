@@ -1,0 +1,11 @@
+#sb-site {
+  padding: 55.0px 0;
+  margin: 0 auto; }
+
+.sb-slidebar {
+  padding: 5px 5px 5px 5px;
+  color: #428bca;
+  margin-top: 50px; }
+
+.sb-slidebar.center {
+  text-align: center; }
