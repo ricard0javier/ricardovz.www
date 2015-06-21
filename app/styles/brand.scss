@@ -1,0 +1,156 @@
+$shadow-color: #0d1a20;
+$background-color: #1f2e3e;
+$info-color:  #34A1DB;
+$font-color: #ECF0F1;
+$danger-color: #d81f19;
+$success-color:  #5cb85c;
+$warn-color:  #f0ad4e;
+
+
+// -------------- bootstrap --------------
+.navbar-inverse {
+  background-color: $background-color;
+  border-color: $shadow-color;
+}
+
+.navbar-inverse .navbar-brand {
+  color: $font-color;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: $font-color;
+  background-color: $danger-color;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: $font-color;
+  background-color: transparent;
+}
+//-------- end of bootstrap --------------
+
+
+//-------- browser check --------------
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+//-------- end of browser check --------------
+
+
+//-------- headers and footers --------------
+
+.footer > .container {
+  text-align: right;
+}
+
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid $background-color;
+  margin-bottom: 50px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  position: absolute;
+  padding-top: 20px;
+  color: $background-color;
+  bottom: 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 50px;
+  }
+}
+//-------- end of headers and footers --------------
+
+
+//-------- brand design --------------
+body {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  color: $font-color;
+
+  h1, h2 {
+    color: $danger-color;
+  }
+}
+
+.alpha {
+  background-color: rgba($background-color, 0.9);
+}
+
+@keyframes slide-from-left {
+  0% {
+    left: -5000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-from-right {
+  0% {
+    right: -5000px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.banner {
+  min-width: 50%;
+  max-width: 75%;
+  position: absolute;
+  background-color: $background-color;
+  text-align: center;
+  animation-duration: 1s;
+}
+
+.banner-top {
+  margin: 5px;
+  right: 0;
+  animation-name: slide-from-right;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.banner-bottom {
+  margin-bottom: 5px;
+  bottom: 0;
+  left: 0;
+  animation-name: slide-from-left;
+  line-height: 1.5em;
+}
+//-------- end of brand design --------------

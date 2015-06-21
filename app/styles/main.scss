@@ -1,0 +1,35 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "components-font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import "brand";
+
+.banner-top > form > input {
+  border-width: 0;
+  text-align: center;
+  width: 75%;
+  padding: 5px 0 5px 5px;
+  border-radius: 10px 0 0 10px;
+  color: $background-color;
+}
+
+.banner-top > form > button {
+  width: 20%;
+  padding: 5px 5px 5px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.banner-img-right {
+  border-radius: 50%;
+  border: 3px solid $background-color;
+  display: inline;
+  margin-right: -50px;
+  width: 100px;
+}
+
+
+.float-right {
+  float: right;
+}

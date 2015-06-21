@@ -1,0 +1,8 @@
+<article class="alpha" ng-repeat="post in posts">
+    <header>
+        <h2 ng-bind="post.title"></h2>
+        <!--<p class="lead" ng-show="{{post.header.subtittle.length}}" ng-bind="post.header.subtittle"></p>-->
+    </header>
+    <div ng-bind-html="post.content"></div>
+    <!--<img class="pull-right" ng-show="{{post.image.length}}" alt="A painter is colouring the site" width="260" height="198" ng-src="{{post.image}}">-->
+</article>

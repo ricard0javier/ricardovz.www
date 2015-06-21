@@ -1,0 +1,25 @@
+
+<div class="banner banner-top">
+  <form ng-hide="showThanks" ng-submit="subscribe()">
+    <input type="email" required tabindex="1" placeholder="Be updated, leave your email!" ng-bind="email">
+    <button class="btn btn-success">Send</button>
+  </form>
+  <div ng-cloak ng-show="showThanks">
+    <span>Thanks!</span>
+  </div>
+</div>
+
+<div class="banner banner-bottom">
+  <div class="pull-right">
+    <img class="banner-img-right" src="images/profile.png">
+  </div>
+  <div>
+    <span>Welcome!</span>
+    <br>
+    <span>Go ahead, have a look at my</span>
+    <br>
+    <form action="/#/blog">
+      <button class="btn btn-success" autofocus tabindex="2">Blog</button>
+    </form>
+  </div>
+</div>
