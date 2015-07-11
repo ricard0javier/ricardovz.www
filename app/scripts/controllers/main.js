@@ -15,9 +15,6 @@ angular.module('ricardoJsApp')
 
       $scope.showThanks = true;
 
-      $http.post('http://api.ricardovz.com/subscribe', $scope.email).success(function(data) {
-        alert($scope.email);
-        $scope.posts = data;
-      });
+      $http.post('http://api.ricardovz.com/subscribe', $scope.email);
     };
   });
