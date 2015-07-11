@@ -1,7 +1,7 @@
 
 <div class="banner banner-top">
   <form ng-hide="showThanks" ng-submit="subscribe()">
-    <input type="email" required tabindex="1" placeholder="Be updated, leave your email!" ng-bind="email">
+    <input type="email" required tabindex="1" placeholder="Be updated, leave your email!" ng-model="email">
     <button class="btn btn-success">Send</button>
   </form>
   <div ng-cloak ng-show="showThanks">
@@ -19,7 +19,7 @@
     <span>Go ahead, have a look at my</span>
     <br>
     <form action="/#/blog">
-      <button class="btn btn-success" autofocus tabindex="2">Blog</button>
+      <button class="btn btn-success" tabindex="2">Blog</button>
     </form>
   </div>
 </div>
