@@ -425,6 +425,21 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    // s3 setup
+    aws: grunt.file.readJSON("s3-credentials.json"),
+    s3: {
+      options: {
+        accessKeyId: "<%= aws.accessKeyId %>",
+        secretAccessKey: "<%= aws.secretAccessKey %>",
+        bucket: "ricardovz.com",
+        region: "us-west-2"
+      },
+      build: {
+        cwd: "dist/",
+        src: "**"
+      }
     }
   });
 
