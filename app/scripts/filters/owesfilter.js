@@ -9,7 +9,7 @@
  * Filter in the ricardoJsApp.
  */
 angular.module('ricardoJsApp')
-    .filter('owesFilter', function () {
+    .filter('owesFilter', function ($filter) {
         return function (input, total) {
 
             if (input === undefined || total == undefined) {

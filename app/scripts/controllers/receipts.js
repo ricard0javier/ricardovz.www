@@ -8,7 +8,7 @@
  * Controller of the ricardoJsApp to manage all the receipt stored on the database
  */
 angular.module('ricardoJsApp')
-    .controller('ReceiptsCtrl', function ($scope, environment, $http, $interval, $modal) {
+    .controller('ReceiptsCtrl', ["$scope", "environment", "$http", "$interval", "$modal", function ($scope, environment, $http, $interval, $modal) {
 
         $scope.saving = false;
 
@@ -201,4 +201,4 @@ angular.module('ricardoJsApp')
         }
 
 
-    });
+    }]);
