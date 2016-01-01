@@ -16,8 +16,8 @@ angular.module('ricardoJsApp')
         scope.$on("$routeChangeSuccess", function () {
 
           var hrefs = [
-              '/#' + $location.path(),
-              '#' + $location.path(),
+              '/#!' + $location.path(),
+              '#!' + $location.path(),
               $location.path()
           ];
 

@@ -22,6 +22,29 @@ angular.module('ricardoJsApp')
 
         $scope.image2 = {};
 
+
+
+        var headers = {
+            authorization: "Basic dXNlcjpwYXNzd29yZA=="
+        };
+
+        $http({
+            method: 'GET',
+            url: "http://api.ricardovz.com:8080/users",
+            headers : headers
+        }).success(function(data) {
+            console.log("yeah!");
+            console.log(data);
+            console.log("yeah!");
+        }).error(function(data) {
+            console.log("ouch!");
+            console.log(data);
+            console.log("ouch!");
+        });
+
+
+
+
         var id = 0;
 
         initialize();

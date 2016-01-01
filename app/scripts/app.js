@@ -17,13 +17,15 @@ angular
         'ngSanitize',
         'ngTouch',
         'LocalStorageModule',
-        'ui.bootstrap'
+        'ui.bootstrap',
+        'angularUtils.directives.dirDisqus',
+        'hljs'
     ])
     .config(['localStorageServiceProvider', function (localStorageServiceProvider) {
         localStorageServiceProvider.setPrefix('ls');
     }])
 
-    .config(function ($routeProvider) {
+    .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
@@ -43,4 +45,14 @@ angular
             .otherwise({
                 redirectTo: '/'
             });
-    });
+
+        $locationProvider.hashPrefix('!');
+    })
+
+
+    //.config(function ($httpProvider) {
+    //
+    //    $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+    //
+    //})
+;

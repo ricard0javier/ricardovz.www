@@ -79,17 +79,24 @@ $warn-color:  #F0AD4E;
   .container {
     max-width: 730px;
   }
+}
 
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 50px;
-  }
+}
+
+/* Remove the padding we set earlier */
+.header,
+.footer {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* Space out the masthead */
+.header {
+  margin-bottom: 50px;
 }
 //-------- end of headers and footers --------------
 
@@ -111,6 +118,7 @@ body {
   background-color: rgba($background-color, 0.9);
   margin-top: 5px;
   border-radius: 10px;
+  padding: 5px;
 }
 
 @keyframes slide-from-left {
